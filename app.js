@@ -32,7 +32,7 @@
     app.post('/upload', upload.single('file'), async (req, res) => {
   try {
 
-   // console.log("Uploaded File 👉", req.file);
+   // console.log("Uploaded File ", req.file);
 
     if (!req.file) {
       return res.status(400).json({
